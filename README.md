@@ -42,3 +42,5 @@ When using Kiwi APIs I first used their search API to get airports by given city
 
 Each FlightApiResponseModel has data which constructs FlightDataModel. Each flight data has multiple routes as RouteModel which has lat_from, lng_from, lat_to, long_to. Each RouteModel may contain multiple RouteDistanceModel. Each RouteDistanceModel have a distance calculated from lat,lngs of from,to and a price for that route. Dollars_per_km is calculated from price and total distances of all RouteModels of a RouteDistanceModel. 
 Script returns best dollars_per_km for selected Route and the Route that leads to best dollars_per_km as well.
+You can run the script as follows:
+*	python main.py --from London --to Paris
